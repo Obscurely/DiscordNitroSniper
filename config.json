@@ -1,0 +1,5 @@
+{
+  "user_token": "user_token",
+  "threads_number": "threads_amount",
+  "proxies_timeout_ms": "3000"
+}
