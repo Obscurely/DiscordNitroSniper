@@ -28,23 +28,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/Obscurely/DiscordNitroSniper">
+    <img src="images/logo.png" alt="Logo" width="128" height="100">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Discord Nitro Sniper</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Fast multi-threaded discord nitro sniper written in C# with dotnet 6 (as fast as GO or even faster at requests) using proxies from proxy scrape's API. Auto activates code on account after found.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Obscurely/DiscordNitroSniper"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/Obscurely/DiscordNitroSniper">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/Obscurely/DiscordNitroSniper/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/Obscurely/DiscordNitroSniper/issues">Request Feature</a>
   </p>
 </div>
 
@@ -77,10 +77,39 @@
 </details>
 
 
-# DiscordNitroSniper
+## About The Project
 Fast multi-threaded discord nitro sniper written in C# with dotnet 6 (as fast as GO or even faster at requests) using proxies from proxy scrape's API. Auto activates code on account after found. Rewrite of my old [Discord-Nitro-Sniper Repo](https://github.com/Obscurely/Discord-Nitro-Sniper/), old one was old and bad quite bad written since I was at start with API's client requests and c# in general.
 
-## Table of contents
+
+
+### Built with
+Only the stock libraries.
+* [C# 10.0](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10)
+* [.NET 6](https://devblogs.microsoft.com/dotnet/announcing-net-6/?WT.mc_id=dotnet-35129-website)
+
+
+
+## Getting Started
+
+### Running The Program
+1. Go to [Releases](https://github.com/Obscurely/DiscordNitroSniper/releases) tab and download latest stable binary for your platform, if your platform is not present refer to [Compilation](#compilation) and compile it for your platform.
+2. Extract archive to a folder, wherever you want.
+3. Open config.json with your favourite file editor of choice and edit the file to fit your computer and use.
+```
+{
+  "user_token": "user_token",
+  "threads_number": "threads_amount",
+  "proxies_timeout_ms": "3000"
+}
+```
+Replace user_token value (right side) with your discord user token, refer to [how to get discord user token](#how-to-get-user-token) if you don't know how.<div>
+Theads
+5. 
+6. Open a new terminal/cmd window.
+7. 
+
+### Compilation
+Any of [.NET 6 available platforms](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md) (distributions like Arch aren't specified, but can still be run if you compile them for linux).
 
 ## General Info
 Discord nitro sniper. 
