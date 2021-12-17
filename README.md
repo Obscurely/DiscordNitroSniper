@@ -63,8 +63,8 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#running-the-program">Running the Program</a></li>
+        <li><a href="#compilation">Compilation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -102,14 +102,39 @@ Only the stock libraries.
   "proxies_timeout_ms": "3000"
 }
 ```
-Replace user_token value (right side) with your discord user token, refer to [how to get discord user token](#how-to-get-user-token) if you don't know how.<div>
-Theads
-5. 
-6. Open a new terminal/cmd window.
-7. 
+<div>Replace user_token value (right side) with your discord user token, refer to [how to get discord user token](#how-to-get-user-token) if you don't know how.</div>
+<div>Replace "threads_amount" with how many threads you want to run this on, for me with a 16 threads cpu going past 2048 threads seem to slow down more than make it faster and going above 512 threads (maybe above less) would cause the router to run out of memory so test it yourself. Just don't do insance amount of threads, do like 4-8 times your cpu threads, meaning if you have a 16 threaded cpu you would use 64-128 threads. </div>
+<div>Change the proxies timeout only if you hae a good reason to, 3000 seems to be the sweat spot from my testing. </div>
+
+4. Open a new terminal/cmd window in the folder you extracted the program in, if you can't rightclick on the folder and open it there do: "cd {the path}" and you will get there.
+5. From here, if you are on windows run:
+```
+.\DiscordNitroSniper.exe
+```
+If you are on any other OS run:
+```
+./DiscordNitroSniper
+```
+6. Now you are fully setup and all you need to do is wait and pray you will get lucky!
 
 ### Compilation
-Any of [.NET 6 available platforms](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md) (distributions like Arch aren't specified, but can still be run if you compile them for linux).
+Any of [.NET 6 available platforms](https://github.com/dotnet/core/blob/main/release-notes/6.0/supported-os.md) (distributions like Arch aren't specified, but can still be run if you compile them for linux). For the next steps you will need to have [.NET 6 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) installed
+
+1. Clone this repo on your pc, you can use "git clone", if you have git installed, like this:
+```
+git clone https://github.com/Obscurely/DiscordNitroSniper/edit/master/README.md
+```
+Otherwise in the right up side of the repo page you will see a download button, download the repo as zip and extract it in a folder
+
+2. Open a new terminal/cmd window in the folder you extracted the repo in, if you can't rightclick on the folder and open it there do: "cd {the path}" and you will get there.
+3. From there run this compile command in the terminal:
+```
+dotnet publish --sc -r YOUR_RID -c Release
+```
+Where YOUR_RID should be replaced with the one corresponding to your platform, check [RID CATALOG](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog), for example on linux you would use linux-x64 and on windows win-x64 or win10-x64.
+
+4. Your build is gonna be in the folder DiscordNitroSniper/bin/Release/net6.0/YOUR_RID/publish
+YOUR_RID, the rid you used above.
 
 ## General Info
 Discord nitro sniper. 
