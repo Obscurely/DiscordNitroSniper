@@ -83,7 +83,7 @@
 
 
 ## About The Project
-Fast multi-threaded discord nitro sniper written in C# with dotnet 6 (as fast as GO or even faster at requests) using proxies from proxy scrape's API. Auto activates code on account after found. Rewrite of my old [Discord-Nitro-Sniper Repo](https://github.com/Obscurely/Discord-Nitro-Sniper/), old one was old and bad quite bad written since I was at start with API's client requests and c# in general.
+Fast multi-threaded discord nitro sniper written in C# with dotnet 6 (as fast as GO or even faster at requests) using proxies from proxy scrape's API. Auto activates code on account after found. Rewrite of my old [Discord-Nitro-Sniper Repo](https://github.com/Obscurely/Discord-Nitro-Sniper/), old one was old and quite bad written since I was at start with API's client requests and c# in general.
 
 
 
@@ -107,7 +107,7 @@ Only the stock libraries.
   "proxies_timeout_ms": "3000"
 }
 ```
-<div>Replace user_token value (right side) with your discord user token, refer to [how to get discord user token](#how-to-get-user-token) if you don't know how.</div>
+Replace user_token value (right side) with your discord user token, refer to [how to get discord user token](#how-to-get-user-token) if you don't know how.
 <div>Replace "threads_amount" with how many threads you want to run this on, for me with a 16 threads cpu going past 2048 threads seem to slow down more than make it faster and going above 512 threads (maybe above less) would cause the router to run out of memory so test it yourself. Just don't do insance amount of threads, do like 4-8 times your cpu threads, meaning if you have a 16 threaded cpu you would use 64-128 threads. </div>
 <div>Change the proxies timeout only if you hae a good reason to, 3000 seems to be the sweat spot from my testing. </div>
 
@@ -159,6 +159,9 @@ Either post an issue in the [Issues Tab](https://github.com/Obscurely/DiscordNit
 
 ### Why CSharp and not GO for Mass Http Requesting
 Written in C# instead of GO like people usually do for mass http requesting because from my testing dotnet 6 compared to latest GO version, by making a lot of requests, C# even proved faster than GO with 1ms on average, that's insignificant, but the point is it doesn't matter so I chose to go with C# since I like it more and is more optimized IMO for multi threading.
+
+### How to get user token
+I am not gonna waste time writing my own explenation on how to do it since there are a lot of resources available online. This are some: [youtube video on how to get it using inspect elements, press ctrl+shift+i to open it in the client app](https://www.youtube.com/watch?v=YEgFvgg7ZPI) or [a written guide](https://powermicrotech.com/how-to-get-your-discord-token/).
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
