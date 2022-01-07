@@ -35,7 +35,7 @@
   <h3 align="center">Discord Nitro Sniper</h3>
 
   <p align="center">
-    Fast multi-threaded discord nitro sniper written in C# with dotnet 6 (as fast as GO or even faster at requests) using proxies from proxy scrape's API. Auto activates code on account after found.
+    Fast multi-threaded discord nitro sniper written in C# with dotnet 6 (as fast as GO or even faster at requests) using proxies from proxy scrape's API. Auto activates code on account after one gets found.
     <br />
     <a href="https://github.com/Obscurely/DiscordNitroSniper"><strong>Explore the docs »</strong></a>
     <br />
