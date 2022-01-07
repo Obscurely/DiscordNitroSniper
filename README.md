@@ -72,7 +72,12 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li>
+      <a href="#acknowledgments">Acknowledgments</a>
+      <ul>
+        <li><a href="#why-csharp-and-not-go-for-mass-http-requesting"> Why CSharp and not GO for Mass Http Requesting</a></li>
+      </ul>
+    </li>
   </ol>
 </details>
 
@@ -133,34 +138,27 @@ dotnet publish --sc -r YOUR_RID -c Release
 ```
 Where YOUR_RID should be replaced with the one corresponding to your platform, check [RID CATALOG](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog), for example on linux you would use linux-x64 and on windows win-x64 or win10-x64.
 
-4. Your build is gonna be in the folder DiscordNitroSniper/bin/Release/net6.0/YOUR_RID/publish
-YOUR_RID, the rid you used above.
+4. Your build is gonna be in the folder DiscordNitroSniper/bin/Release/net6.0/YOUR_RID/publish where YOUR_RID, the rid you used above. From here refer to [Running The Program](#running-the-program).
 
-## General Info
-Discord nitro sniper. 
+## Usage
+I do not recomend that you actually use this program to get nitro, even tho you can, because there is a chance you would get your account terminated. The purpose of this is to show an example and help you learn how to use HttpClient in C# to create mass requests with proxies as efficient and fast as possbile since C# is actually a great language for [scraping the web](https://www.parsehub.com/blog/what-is-web-scraping/), mass requesting a website for specific things, etc. Or even use this readme as an example if you want, or afterall to do whatever you want with this repo since it's under MIT license and I ain't goona stop you from doing whatever your heart desires.
 
-## Why C# and not GO for Mass Http Requesting
+## Roadmap
+Nothing really. The project is in the state I wanted it, so it's probably not gonna get updated in the near feature at least.
+
+## Contributing
+Edit a file you want, do a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request), I will look at it and if the change makes sense and is a good one I will accept it and that's it.
+
+## License
+Is under [MIT license](https://mit-license.org/) and I ain't gonna care whatever anyone does with the code, so stick to the license conditions and have fun :)
+
+## Contact
+Either post an issue in the [Issues Tab](https://github.com/Obscurely/DiscordNitroSniper/issues) or contact me at this email adddress if you have more to say:  obscurely.social@protonmail.com
+
+## Acknowledgments
+
+### Why CSharp and not GO for Mass Http Requesting
 Written in C# instead of GO like people usually do for mass http requesting because from my testing dotnet 6 compared to latest GO version, by making a lot of requests, C# even proved faster than GO with 1ms on average, that's insignificant, but the point is it doesn't matter so I chose to go with C# since I like it more and is more optimized IMO for multi threading.
-
-## Technologies
-Project is created with:
-* C# 10.0
-* .NET 6.0
-
-## Program Dependencies
-Nothing extra needs to be installed. Only uses default .NET C# libraries.
-
-## Compilation
-
-## How to Use
-
-## How it Works
-
-## Screenshots
-
-## Other Notes
-
-More to come! :)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
