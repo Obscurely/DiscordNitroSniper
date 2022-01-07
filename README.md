@@ -75,7 +75,8 @@
     <li>
       <a href="#acknowledgments">Acknowledgments</a>
       <ul>
-        <li><a href="#why-csharp-and-not-go-for-mass-http-requesting"> Why CSharp and not GO for Mass Http Requesting</a></li>
+        <li><a href="#why-csharp-and-not-go-for-mass-http-requesting">Why CSharp and not GO for Mass Http Requesting</a></li>
+        <li><a href="how-to-get-user-token">How to get user token</a></li>
       </ul>
     </li>
   </ol>
