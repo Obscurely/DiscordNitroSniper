@@ -128,7 +128,7 @@ Any of [.NET 6 available platforms](https://github.com/dotnet/core/blob/main/rel
 
 1. Clone this repo on your pc, you can use "git clone", if you have git installed, like this:
 ```
-git clone https://github.com/Obscurely/DiscordNitroSniper/edit/master/README.md
+git clone https://github.com/Obscurely/DiscordNitroSniper.git
 ```
 Otherwise in the right up side of the repo page you will see a download button, download the repo as zip and extract it in a folder
 
