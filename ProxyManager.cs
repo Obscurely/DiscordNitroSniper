@@ -86,7 +86,7 @@ namespace DiscordNitroSniper
                     }
                     areProxiesDownloaded = true;
                 }
-                catch (System.Net.Http.HttpRequestException)
+                catch (Exception)
                 {
                     Thread.Sleep(Rand.Next(3, 9) * 1000); // it's 9 and not 8 because it's an exclusive upper bound not inclusive
                 }
