@@ -69,8 +69,8 @@ Fast multi-threaded discord nitro sniper written in C# with dotnet 6 (as fast as
 
 Only the stock libraries.
 
- -[C# 10.0](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10)
- -[.NET 6](https://devblogs.microsoft.com/dotnet/announcing-net-6/?WT.mc_id=dotnet-35129-website)
+ - [C# 10.0](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10)
+ - [.NET 6](https://devblogs.microsoft.com/dotnet/announcing-net-6/?WT.mc_id=dotnet-35129-website)
 
 ## Getting Started
 
