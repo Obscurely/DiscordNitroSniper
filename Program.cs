@@ -88,7 +88,6 @@ namespace DiscordNitroSniper
         {
             ProxyManager proxyManager = new(currentThreadNumber, proxiesTimeoutMs);
             currentThreadNumber++;
-            // await proxyManager.DownloadProxies();
             DiscordNitro discordNitro = new(config.UserToken, proxiesTimeoutMs);
             discordNitro.ChangeHttpClientProxy(await proxyManager.PickProxy());
 
