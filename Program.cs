@@ -115,7 +115,20 @@ namespace DiscordNitroSniper
                 }
                 catch (Exception)
                 {
-                    discordNitro.ChangeHttpClientProxy(await proxyManager.PickProxy());
+                    while (true)
+                    {
+                        try
+                        {
+                            discordNitro.ChangeHttpClientProxy(await proxyManager.PickProxy());
+                        }
+                        catch (Exception)
+                        {
+                            Thread.Sleep(3000);
+                            continue;
+                        }
+
+                        break;
+                    }
                 }
             }
         }
